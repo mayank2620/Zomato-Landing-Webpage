@@ -1,0 +1,62 @@
+/* Universal selector:- it is used for make a webpage fully disable from inbuilt css of a browser */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero_Section{
+    background-image: url(./Image/hero_section_background.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    min-height: 60vh;
+}
+/* Adjusting element of navigation bar */
+.navbar{
+    display: flex; /* it is used to divide all elment navbar in a equal containers*/
+    align-items: center; /* this is used to move all content between centre of a screen*/
+    justify-content: space-between; /* it provide a  space between elent is nav bar */
+    height:85px; /*it provide a horizantal gap between side of web page and elements*/
+    padding: 16px 48px ; /*it provide sapaccing in top-bottom and left-right*/
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    /* font-size: 20px; */
+    
+}
+
+.navbar_MenuContainer{
+    display: flex;
+    gap:35px;
+}
+
+.navbar_MenuContainer .userIcon{
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: dotted 1px whitesmoke;
+}
+
+.zomatoLogoHero{
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:900px){
+    .navbar_MenuContainer .userIcon{
+        display:flex;
+    }
+    .link{
+        display:none;
+    }
+}
