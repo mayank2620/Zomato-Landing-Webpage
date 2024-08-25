@@ -21,8 +21,8 @@
     justify-content: space-between; /* it provide a  space between elent is nav bar */
     height:85px; /*it provide a horizantal gap between side of web page and elements*/
     padding: 16px 48px ; /*it provide sapaccing in top-bottom and left-right*/
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
 }
 
 .navbar a{
@@ -52,11 +52,136 @@
     justify-content: center;
 }
 
-@media only screen and (max-width:900px){
+
+
+.hero_Section_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    height: calc( 60vh- 85px);
+}
+
+.zomatoLogoHero{
+    width: 200px;
+    height: 40px;
+
+}
+
+.hero_Section_tittle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 350;
+}
+
+.hero_Section_inputs{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+.input_container_location , .input_container_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.input_container_location{
+    width:35%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.input_container_search{
+    width:65%;
+}
+
+.containerWeOffer{
+    display: flex;
+    margin: 3rem auto;
+    /* height: 200vh; */
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 25px;
+}
+.weOffer_card{
+    display: flex;
+
+    flex-direction: wrap;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+}
+   
+    
+
+.weOffer_card:hover{
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    /* padding: 5px; */
+    border-radius: 15px;
+    overflow: hidden;
+    flex-direction: wrap;
+    cursor: pointer;
+    size: 100px;
+    width: 360px;
+    height: 260px;
+    
+    
+}
+
+.weOffer_card img{
+    width: 100%;
+    height:170px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.weofferContent{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width:600px){
     .navbar_MenuContainer .userIcon{
         display:flex;
     }
     .link{
         display:none;
+    }
+    .hero_Section{
+        min-height: 80vh;
+    }
+
+    .hero_Section_container{
+        flex-direction: column;
+        background-color: transparent;
+        width:100%;
+    }
+
+    .input_container_location , .input_container_search{
+        padding:18px;
+        border-radius:10px ;
+        width: 98%;
+    }
+    .hero_Section_container{
+        height:calc(80vh-40px;)
+    }
+    .hero_Section_tittle{
+        font-size: 18px;
+        width:95%;
     }
 }
