@@ -59,6 +59,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 100px;
     gap: 22px;
     height: calc( 60vh- 85px);
 }
@@ -109,7 +110,7 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
-    gap: 25px;
+    gap: 40px;
 }
 .weOffer_card{
     display: flex;
@@ -122,6 +123,7 @@
     overflow: hidden;
     width: 350px;
     height: 250px;
+    margin-right: 12px;
 }
    
     
@@ -130,13 +132,14 @@
     border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
     /* padding: 5px; */
-    border-radius: 15px;
-    overflow: hidden;
+    /* border-radius: 15px;
+    overflow: hidden; */
     flex-direction: wrap;
     cursor: pointer;
-    size: 100px;
+    /* size: 100px;
     width: 360px;
-    height: 260px;
+    height: 260px; */
+    transform: scale(1.1);
     
     
 }
@@ -155,6 +158,121 @@
     margin-left: 5px;
 }
 
+.collectionContainer{
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* font-size: 20px; */
+    /* font-weight: 300; */
+
+}
+
+.collectionContent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 300;
+
+    
+}
+.collectionContent h1{
+    font-size: 40px;
+    font-weight: 450;
+   /* margin-left:32px; */
+   
+}
+
+.collectionContent p{
+    color: rgb(21, 21, 21);
+}
+
+
+
+.paraCollection{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.paraCollection .link{
+    text-decoration: none;
+    color: red;
+    font-size: 17px;
+}
+
+.paraCollection span{
+    color: red;
+}
+
+.styleforCollectionPara{
+    display: flex;
+}
+
+.cardCollectionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+
+.cardCollectionContainer .card{
+    height: 300px;
+    min-width:240px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.card1{
+    background-image: url(./Image/collection\ card1.jpeg);
+}
+
+.card2{
+    background-image: url(./Image/Collection\ card2.jpeg);
+}
+
+.card3
+{
+    background-image: url(./Image/Collection\ card3.avif);
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9)0%,
+        rgba(0,0,0,0.05)50%,
+        rgba(0,0,0,0.05) 85%
+    );
+    z-index: 0.5;
+}
+
+.cardCollectionContainer .card .cardContent{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.cardContent h4{
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
 @media only screen and (max-width:600px){
     .navbar_MenuContainer .userIcon{
         display:flex;
@@ -170,6 +288,8 @@
         flex-direction: column;
         background-color: transparent;
         width:100%;
+        height:calc(80vh-40px);
+
     }
 
     .input_container_location , .input_container_search{
@@ -177,9 +297,7 @@
         border-radius:10px ;
         width: 98%;
     }
-    .hero_Section_container{
-        height:calc(80vh-40px;)
-    }
+    
     .hero_Section_tittle{
         font-size: 18px;
         width:95%;
